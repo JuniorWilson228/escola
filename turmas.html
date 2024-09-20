@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEP - Escola Estadual de Educação Profissional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 15px 0 ;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #003d7a;
+        }
+        .main-content {
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: url('https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/4d2b8b2e03deebd0bc80e85e76da4dea/entradaep.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVlz2n2sFYkDx0lsgD-A0Nw_u8wfoId-SRbZ5M1qrENUPFMLar-_-diGP10z3G6ZmpjuQtkKUpVbT90xeMt9mXyBWm3G6zHtl91Dp9ULraaEOgqatZzH3_oHJlL3ZiGcgi') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        section {
+            margin: 40px 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .info-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .info-card img {
+            width: 100%;
+            height: auto;
+        }
+        .info-card h3 {
+            margin: 15px 0;
+            color: #0056b3;
+        }
+        .info-card p {
+            padding: 0 15px 15px;
+        }
+        .info-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero {
+                padding: 60px 20px;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">EEEP</div>
+            <nav>
+
+                <a href="index.html">Inicial</a>
+                <a href="#facilities">Instalações</a>
+                <a href="#contact">Contato</a>
+                <a href="turmas.html">Turmas</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section id="home" class="hero">
+            <h1>Bem-vindo à EEEP</h1>
+            <p>Excelência em Educação Profissional</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre a EEEP</h2>
+            <p>A Escola Estadual de Educação Profissional (EEEP) é uma instituição dedicada ao ensino de alta qualidade, oferecendo cursos técnicos e profissionalizantes que preparam nossos alunos para o mercado de trabalho.</p>
+        </section>
+
+        <section id="facilities">
+            <h2>Turmas 2024</h2>
+            <div class="info-grid">
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/4d2b8b2e03deebd0bc80e85e76da4dea/entradaep.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVlz2n2sFYkDx0lsgD-A0Nw_u8wfoId-SRbZ5M1qrENUPFMLar-_-diGP10z3G6ZmpjuQtkKUpVbT90xeMt9mXyBWm3G6zHtl91Dp9ULraaEOgqatZzH3_oHJlL3ZiGcgi" alt="Edifício Principal">
+                    <h3>1°A (Administração)</h3>
+                    <p>O coração da escola, onde se encontram as salas de aula, laboratórios e a administração.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/98297db6fb38a878b6d4e4197a71a191/biblioteca.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieV_bxCHZFH1zkH9YoFZ5xCLgF8tb3kJfBlVShnl-U4YnxsRtxx4Fci_uiWrigTXcNy7yKKBh-5iqvsv8rNbESExTWUqiT0KizDVsvTj1uVjn4A4JEQwLXMtzvQANMPcOse" alt="Biblioteca">
+                    <h3>1°B (Agropecuària)</h3>
+                    <p>Um espaço moderno para leitura e pesquisa, com uma vasta coleção de livros e recursos digitais.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/1ae9c7ac251c208a78405ac9e0f2e230/auditorio.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVehYYAPFXuMKZs1dyQNa2JlPdXbJuyTE21jBnGfe0CAQZDr69X83UyfhnZUCVxxDZCFmEKpkMrOwrLz5LdtLgw_cOJqHHlrABehMuFA3-JVGYmNB4ZNVvGeRx-2inBFLS" alt="Auditório">
+                    <h3>1°C (Desenvolvimento de Sistemas)</h3>
+                    <p>Espaço da escola utilizado para apresentações de projetos internos e externos da escola, apresentações de alunos para alunos, todo e qualquer tipo de evento, além de área de descanso para os alunos no horário do almoço.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/d3bf3faba65ec26cb787ebd354afe0f1/matematica.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVwjuBKHXRdMX48kL3qyt4ZyvLkJ7cc2U2jKG37Td2dTlu732tQl4QgfoGdgJwQpJmPMM_B5v3r-NDWgXVqoWfVksFI-v_nPGU3JE7qCTHLqv7Xxuw-PwPMiJIsrwxjZge" alt="Laboratório de  matemática">
+                    <h3>1°D (Redes de Computadores)</h3>
+                    <p>Esse local é utilizado mais frequentemente pelos professores de matemática para planejamento de aulas, mas também conta com vários equipamentos que podem ser utilizados nas aulas de matemática para melhor entendimento.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/2cdc03d003bb3a47e37f8ab69486465b/labinfo.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVYFbNXfjugWU6RkHCFubkX9f8L6DzAl-cOTmP2SPz96HtMAmajlGF94oBZv2DT3O0jCDWehsPh2hF3bV48crG6KKDXH9lplrMRETMGlg2EfK59BiJP15zLlRuu4LBrnH1" alt="Laboratório de informática">
+                    <h3>2°A (Administração)</h3>
+                    <p>Laboratório com diversos computadores e é voltado para a área de T.I</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/8a75c7d5bc862172ca0fd4614d07cbcf/linguas.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVItCheOJbxjmevEcAMere789tlD-JzsSIE6hzBDLkDFuE9gY_Yov9wfp8tR6HpnC49MHLIClvnDV7RG9GcMX1Al9l5zKXhGf7IroCtGlcPKMpJ0PmFFeopTnSZXgrnHFc" alt="Laboratório  de LInguas">
+                    <h3>2°B (Agropecuària)</h3>
+                    <p>Laboratório de línguas, igualmente ao de informática, é voltado para as salas de T.I.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/ddb971b8e79d6c1c227588890ec5994b/quimica.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVv1iyCJboObVZYOqfTWzNOEKPv0_xx8xnw996Z_NMEOs8oE6z5a4IYbxkANR7JOCnSLtmQ-noxHgrm0S-d3B-98a45oc34Lza8OIFH4kmrT65vOmZtAcEjv2rC0_-qj4j" alt="Laboratório de Química">
+                    <h3>2°C (Desenvolvimento de Sistemas)</h3>
+                    <p>Um dos laboratórios da área de natureza, onde encontramos vários utensílios e ferramentas para fazer experimentos e experiências químicas.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/7e78a4f3b2c65f381c73204a76059fff/labf.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieV1Nfjj5gdeHEqs9bBTN_bTrNyAg6UOXhU6OoJ-79iRWjFBvNW16XhS7b4sJRy84O-54ps4b9XuuUCxrOlGMNItWck5o0lWlfnvSb0Emw0qZk=" alt="Laboratório de Física">
+                    <h3>2°D (Redes de Computadores)</h3>
+                    <p>Segundo dos laboratórios da área de natureza, esse traz vários mecanismos diferentes, para estudar movimento, leis, e outras áreas da física.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/d112d056a8d1ab3f188dedb483f0232e/biologia.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVSXbcbzUkMcUsELAzOFGLs79LD2cA1Nd9Z6Clo9cH5g4E-rnMTBk1GIIFqXLz4eXEdC3K52_PdvrjguEEDLyNF64xIK8Yjc6UjmKC96ZP922lEkGfTPIjU1-qyLXOD5Y4" alt="Laboratório de Biologia">
+                    <h3>3°A (Administração)</h3>
+                    <p>Último dos laboratórios da área de natureza. Contém diversos elementos de anatomia humana principalmente, onde traz características do corpo e sistemas humanos, além de várias outras características.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/583ac97d185eeaebd27cc6413a4e9ea5/arealazer.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVXw4FcWn_J0btTsmA1KT43VkD5rsjFwvO635ryzsZZNHVSjIh9IQK-r2L9VVN61SS3gunWqu1qcgLoQsTvMblRlZqqMtdazEydotuy25dUeWr84ZGhSX5cxHfnC64yE_e" alt="Área de Lazer">
+                    <h3>3°B (Desenvolvimento de Sistemas)</h3>
+                    <p>Espaços recreativos com quadras esportivas e áreas verdes para atividades ao ar livre.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/66e13da7d67fe5c69bcfae5c647bee82/cantina.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVdeHdoa2tLVl8_U83L2rzKx8UjGgx01KVDPlq5SQP5Czb1rIVpHUIKOdiqll6rjaRC61Dc8OhQmLlCa9ZIleOEUKW1vS_riF8jxWr-QtXDCh5rc_xyL2H3wK_Jh5-UXqR" alt="Cantina">
+                    <h3>3°C (Redes de Computadores)</h3>
+                    <p>Oferece uma variedade de opções alimentares saudáveis e balanceadas.</p>
+                </article>
+                
+          
+          
+            </div>
+       
+        </section>
+    </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Escola Estadual de Educação Profissional (EEEP). Página produzida por Thavyne Fany & João Vitor.</p>
+    </footer>
+</body>
+</html>
