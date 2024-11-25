@@ -50,6 +50,31 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
+         @media screen and (max-width: 768px) {
+            .nav-list {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                text-align: center;
+            }
+
+            .nav-list li {
+                margin: 10px 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+        }
         .hero {
             background: url('https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/4d2b8b2e03deebd0bc80e85e76da4dea/entradaep.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieVlz2n2sFYkDx0lsgD-A0Nw_u8wfoId-SRbZ5M1qrENUPFMLar-_-diGP10z3G6ZmpjuQtkKUpVbT90xeMt9mXyBWm3G6zHtl91Dp9ULraaEOgqatZzH3_oHJlL3ZiGcgi') no-repeat center center;
             background-size: cover;
